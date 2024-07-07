@@ -51,19 +51,25 @@ function Header() {
         />
 
         <ul
-          className={
+          className={`h-full flex justify-center items-center text-white mr-16 gap-5 max-sm:bg-green-moss max-sm:absolute max-sm:flex-col max-sm:w-screen max-sm:z-10 max-sm:transition-transform max-sm:duration-300 max-sm:top-0 ${
             menu
-              ? "h-full flex justify-center items-center text-white mr-16 gap-5 max-sm:bg-green-moss max-sm:h-screen max-sm:absolute max-sm:top-0 max-sm:flex-col max-sm:w-screen max-sm:z-20"
-              : "h-full flex justify-center items-center text-white mr-16 gap-5 max-sm:hidden"
-          }
+              ? "max-sm:translate-y-0 max-sm:h-screen max-sm:flex"
+              : "max-sm:-translate-y-[100vh]"
+          }`}
         >
-          <li className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
+          <li
+            className={`text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl`}
+          >
             Teoría de las inteligencias múltiples
           </li>
-          <li className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
+          <li
+            className={`text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl`}
+          >
             Test de las inteligencias múltiples
           </li>
-          <li className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
+          <li
+            className={`text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl`}
+          >
             Tipos de inteligencias
           </li>
         </ul>
