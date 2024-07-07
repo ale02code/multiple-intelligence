@@ -1,5 +1,11 @@
+import Home from "./components/Home";
+
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <div className="font-lato w-screen overflow-hidden h-auto">
+      <Home />
+    </div>
+  );
 }
 
 export default App;
