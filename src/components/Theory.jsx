@@ -37,7 +37,7 @@ function Theory() {
         </div>
       </section>
       <section className="h-[70vh] w-screen bg-[#F7E7CD] flex justify-center items-center text-[#685449] max-sm:h-auto">
-        <div className="h-[80%] w-[85%] border border-[#685449] flex justify-evenly items-center text-center gap-5 max-sm:flex-col max-sm:my-5 overflow-hidden max-sm:p-4 max-sm:py-6">
+        <div className="h-[80%] w-[85%] border border-[#685449] flex justify-evenly items-center text-center gap-5 max-sm:flex-col max-sm:my-5 overflow-hidden max-sm:p-4 max-sm:py-6 max-sm:w-[90%]">
           <div className="w-[45%] max-sm:w-full">
             <strong className="font-spectral text-4xl max-sm:text-3xl">
               LA TEORÍA DE LAS INTELIGENCIAS MÚLTIPLES
