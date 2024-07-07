@@ -1,0 +1,324 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Te gusta leer libros, revistas o artículos?"
+    },
+    {
+      "id": 2,
+      "question": "¿Disfrutas escribiendo ensayos, poemas o historias?"
+    },
+    {
+      "id": 3,
+      "question": "¿Eres bueno explicando conceptos a otras personas?"
+    },
+    {
+      "id": 4,
+      "question": "¿Te sientes cómodo participando en debates o discusiones?"
+    },
+    {
+      "id": 5,
+      "question": "¿Encuentras fácil aprender nuevos idiomas?"
+    },
+    {
+      "id": 6,
+      "question": "¿Tienes buena ortografía y gramática?"
+    },
+    {
+      "id": 7,
+      "question": "¿Te gusta jugar con palabras, como en juegos de palabras o crucigramas?"
+    },
+    {
+      "id": 8,
+      "question": "¿Disfrutas escuchando y contando historias?"
+    },
+    {
+      "id": 9,
+      "question": "¿Eres bueno recordando citas o frases célebres?"
+    },
+    {
+      "id": 10,
+      "question": "¿Tienes un amplio vocabulario?"
+    },
+    {
+      "id": 11,
+      "question": "¿Te gustan las matemáticas y la ciencia?"
+    },
+    {
+      "id": 12,
+      "question": "¿Disfrutas resolviendo acertijos y problemas de lógica?"
+    },
+    {
+      "id": 13,
+      "question": "¿Eres bueno analizando datos y estadísticas?"
+    },
+    {
+      "id": 14,
+      "question": "¿Encuentras patrones fácilmente en información compleja?"
+    },
+    {
+      "id": 15,
+      "question": "¿Te sientes cómodo trabajando con números y fórmulas?"
+    },
+    {
+      "id": 16,
+      "question": "¿Te gustan los juegos de estrategia como el ajedrez?"
+    },
+    {
+      "id": 17,
+      "question": "¿Disfrutas de los experimentos científicos?"
+    },
+    {
+      "id": 18,
+      "question": "¿Eres capaz de planificar y organizar proyectos de manera efectiva?"
+    },
+    {
+      "id": 19,
+      "question": "¿Encuentras fácil entender conceptos abstractos?"
+    },
+    {
+      "id": 20,
+      "question": "¿Disfrutas programando o trabajando con tecnología?"
+    },
+    {
+      "id": 21,
+      "question": "¿Te gusta dibujar, pintar o hacer esculturas?"
+    },
+    {
+      "id": 22,
+      "question": "¿Eres bueno interpretando mapas y gráficos?"
+    },
+    {
+      "id": 23,
+      "question": "¿Te resulta fácil visualizar objetos en tres dimensiones?"
+    },
+    {
+      "id": 24,
+      "question": "¿Te gusta diseñar cosas?"
+    },
+    {
+      "id": 25,
+      "question": "¿Tienes una buena percepción de los colores y las formas?"
+    },
+    {
+      "id": 26,
+      "question": "¿Disfrutas resolviendo rompecabezas visuales?"
+    },
+    {
+      "id": 27,
+      "question": "¿Eres bueno orientándote y encontrando caminos nuevos?"
+    },
+    {
+      "id": 28,
+      "question": "¿Encuentras fácil recordar lugares y rutas?"
+    },
+    {
+      "id": 29,
+      "question": "¿Te gusta trabajar con fotografía o video?"
+    },
+    {
+      "id": 30,
+      "question": "¿Eres capaz de imaginar cómo se vería un objeto desde diferentes ángulos?"
+    },
+    {
+      "id": 31,
+      "question": "¿Te gusta escuchar música con frecuencia?"
+    },
+    {
+      "id": 32,
+      "question": "¿Disfrutas tocando instrumentos musicales?"
+    },
+    {
+      "id": 33,
+      "question": "¿Te resulta fácil recordar melodías y letras de canciones?"
+    },
+    {
+      "id": 34,
+      "question": "¿Eres capaz de identificar diferentes instrumentos en una pieza musical?"
+    },
+    {
+      "id": 35,
+      "question": "¿Te gusta componer o improvisar música?"
+    },
+    {
+      "id": 36,
+      "question": "¿Disfrutas cantando, ya sea solo o en un grupo?"
+    },
+    {
+      "id": 37,
+      "question": "¿Eres bueno reconociendo ritmos y patrones musicales?"
+    },
+    {
+      "id": 38,
+      "question": "¿Te sientes atraído por diferentes géneros musicales?"
+    },
+    {
+      "id": 39,
+      "question": "¿Tienes buen oído para afinar instrumentos?"
+    },
+    {
+      "id": 40,
+      "question": "¿Te resulta fácil aprender nuevas canciones?"
+    },
+    {
+      "id": 41,
+      "question": "¿Te gusta participar en deportes y actividades físicas?"
+    },
+    {
+      "id": 42,
+      "question": "¿Eres bueno bailando o practicando algún arte marcial?"
+    },
+    {
+      "id": 43,
+      "question": "¿Te resulta fácil aprender habilidades a través de la práctica física?"
+    },
+    {
+      "id": 44,
+      "question": "¿Disfrutas trabajando con tus manos, como en la carpintería o la jardinería?"
+    },
+    {
+      "id": 45,
+      "question": "¿Te sientes cómodo actuando en obras de teatro o performances?"
+    },
+    {
+      "id": 46,
+      "question": "¿Eres bueno coordinando tus movimientos y teniendo buen equilibrio?"
+    },
+    {
+      "id": 47,
+      "question": "¿Disfrutas de actividades al aire libre, como el senderismo o el ciclismo?"
+    },
+    {
+      "id": 48,
+      "question": "¿Te sientes energizado después de hacer ejercicio?"
+    },
+    {
+      "id": 49,
+      "question": "¿Eres capaz de expresar tus emociones a través del movimiento?"
+    },
+    {
+      "id": 50,
+      "question": "¿Te gusta construir y arreglar cosas?"
+    },
+    {
+      "id": 51,
+      "question": "¿Te gusta reflexionar sobre tus pensamientos y emociones?"
+    },
+    {
+      "id": 52,
+      "question": "¿Eres bueno identificando tus fortalezas y debilidades?"
+    },
+    {
+      "id": 53,
+      "question": "¿Te sientes cómodo pasando tiempo a solas?"
+    },
+    {
+      "id": 54,
+      "question": "¿Te gusta llevar un diario personal?"
+    },
+    {
+      "id": 55,
+      "question": "¿Eres capaz de fijarte metas y trabajar para alcanzarlas?"
+    },
+    {
+      "id": 56,
+      "question": "¿Disfrutas meditando o practicando técnicas de relajación?"
+    },
+    {
+      "id": 57,
+      "question": "¿Eres consciente de tus estados de ánimo y cómo afectan tu comportamiento?"
+    },
+    {
+      "id": 58,
+      "question": "¿Te sientes seguro tomando decisiones importantes?"
+    },
+    {
+      "id": 59,
+      "question": "¿Te resulta fácil aprender de tus errores?"
+    },
+    {
+      "id": 60,
+      "question": "¿Eres capaz de mantener la motivación en proyectos a largo plazo?"
+    },
+    {
+      "id": 61,
+      "question": "¿Te gusta trabajar en equipo y colaborar con otros?"
+    },
+    {
+      "id": 62,
+      "question": "¿Eres bueno entendiendo los sentimientos y necesidades de las personas?"
+    },
+    {
+      "id": 63,
+      "question": "¿Te resulta fácil hacer amigos y mantener relaciones?"
+    },
+    {
+      "id": 64,
+      "question": "¿Disfrutas ayudando a los demás a resolver sus problemas?"
+    },
+    {
+      "id": 65,
+      "question": "¿Eres bueno mediando conflictos y negociando?"
+    },
+    {
+      "id": 66,
+      "question": "¿Te sientes cómodo liderando grupos y organizando actividades?"
+    },
+    {
+      "id": 67,
+      "question": "¿Te resulta fácil captar el lenguaje corporal y las señales sociales?"
+    },
+    {
+      "id": 68,
+      "question": "¿Te gusta participar en actividades comunitarias o voluntariado?"
+    },
+    {
+      "id": 69,
+      "question": "¿Eres capaz de adaptar tu comportamiento según las diferentes situaciones sociales?"
+    },
+    {
+      "id": 70,
+      "question": "¿Te gusta pasar tiempo al aire libre, en la naturaleza?"
+    },
+    {
+      "id": 71,
+      "question": "¿Eres bueno identificando diferentes especies de plantas y animales?"
+    },
+    {
+      "id": 72,
+      "question": "¿Te sientes atraído por temas relacionados con la ecología y la conservación?"
+    },
+    {
+      "id": 73,
+      "question": "¿Disfrutas cuidando de plantas y animales?"
+    },
+    {
+      "id": 74,
+      "question": "¿Te gusta observar fenómenos naturales, como el clima y las estrellas?"
+    },
+    {
+      "id": 75,
+      "question": "¿Eres bueno reconociendo patrones en la naturaleza?"
+    },
+    {
+      "id": 76,
+      "question": "¿Te sientes conectado con el medio ambiente y preocupado por su protección?"
+    },
+    {
+      "id": 77,
+      "question": "¿Disfrutas practicando actividades como la jardinería o la pesca?"
+    },
+    {
+      "id": 78,
+      "question": "¿Te gusta explorar diferentes ecosistemas y hábitats?"
+    },
+    {
+      "id": 79,
+      "question": "¿Eres capaz de identificar y clasificar diferentes elementos naturales?"
+    },
+    {
+      "id": 80,
+      "question": "¿Eres bueno resolviendo problemas prácticos del día a día?"
+    }
+  ]
+}

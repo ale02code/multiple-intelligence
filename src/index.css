@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* border-text */
 @supports (-webkit-text-stroke: 1px #282828) {
   .border-stoke:first-child {
     -webkit-text-stroke: 2px #800000;
@@ -10,4 +11,14 @@
   .border-stoke:last-child {
     -webkit-text-stroke: 1px #800000;
   }
+}
+
+/* scroll bar */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #a9a9a9;
+  border-radius: 20px;
 }
