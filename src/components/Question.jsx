@@ -1,38 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+import questionsData from "../data/questions.json";
 
-function Question() {
-  const [score, setScore] = useState(0);
-
-  const handleScoreChange = (newScore) => {
-    setScore(newScore);
-  };
-
+function Question({ question }) {
   return (
-    <div className="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div className="max-w-lg bg-white rounded-xl shadow-md overflow-hidden w-full md:max-w-2xl text-[#685449] min-h-[185px]">
       <div className="md:flex">
-        <div className="p-4 md:p-6">
-          <h2 className="text-xl font-semibold mb-4">
-            ¿Te gusta leer libros, revistas o artículos?
-          </h2>
-          <div className="flex justify-center space-x-4">
-            <button
-              onClick={() => handleScoreChange(1)}
-              className={`rounded-full w-16 h-16 bg-green-500 ${
-                score === 1 ? "ring-4 ring-green-500" : ""
-              }`}
-            />
-            <button
-              onClick={() => handleScoreChange(2)}
-              className={`rounded-full w-12 h-12 bg-yellow-500 ${
-                score === 2 ? "ring-4 ring-yellow-500" : ""
-              }`}
-            />
-            <button
-              onClick={() => handleScoreChange(3)}
-              className={`rounded-full w-8 h-8 bg-gray-500 ${
-                score === 3 ? "ring-4 ring-gray-500" : ""
-              }`}
-            />
+        <div className="p-4 md:p-6 flex flex-col justify-center items-center w-full">
+          <h2 className="text-xl font-semibold mb-4">{question}</h2>
+          <div className="flex justify-center items-center gap-2">
+            <button className={"rounded-full w-20 h-20 bg-green-500"} />
+            <button className={"rounded-full w-16 h-16 bg-green-500"} />
+            <button className={"rounded-full w-12 h-12 bg-green-500"} />
+            <button className={"rounded-full w-9 h-9 bg-gray-300"} />
+            <button className={"rounded-full w-12 h-12 bg-red-500"} />
+            <button className={"rounded-full w-16 h-16 bg-red-500"} />
+            <button className={"rounded-full w-20 h-20 bg-red-500"} />
+          </div>
+          <div className="flex justify-between w-full mt-1">
+            <p>Estoy de acuerdo</p>
+            <p>No estoy de acuerdo</p>
           </div>
         </div>
       </div>
