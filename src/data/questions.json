@@ -2,323 +2,403 @@
   "questions": [
     {
       "id": 1,
-      "question": "¿Te gusta leer libros, revistas o artículos?"
+      "question": "¿Te gusta leer libros, revistas o artículos?",
+      "intelligence": "lingüística"
     },
     {
       "id": 2,
-      "question": "¿Disfrutas escribiendo ensayos, poemas o historias?"
+      "question": "¿Disfrutas escribiendo ensayos, poemas o historias?",
+      "intelligence": "lingüística"
     },
     {
       "id": 3,
-      "question": "¿Eres bueno explicando conceptos a otras personas?"
+      "question": "¿Eres bueno explicando conceptos a otras personas?",
+      "intelligence": "lingüística"
     },
     {
       "id": 4,
-      "question": "¿Te sientes cómodo participando en debates o discusiones?"
+      "question": "¿Te sientes cómodo participando en debates o discusiones?",
+      "intelligence": "lingüística"
     },
     {
       "id": 5,
-      "question": "¿Encuentras fácil aprender nuevos idiomas?"
+      "question": "¿Encuentras fácil aprender nuevos idiomas?",
+      "intelligence": "lingüística"
     },
     {
       "id": 6,
-      "question": "¿Tienes buena ortografía y gramática?"
+      "question": "¿Tienes buena ortografía y gramática?",
+      "intelligence": "lingüística"
     },
     {
       "id": 7,
-      "question": "¿Te gusta jugar con palabras, como en juegos de palabras o crucigramas?"
+      "question": "¿Te gusta jugar con palabras, como en juegos de palabras o crucigramas?",
+      "intelligence": "lingüística"
     },
     {
       "id": 8,
-      "question": "¿Disfrutas escuchando y contando historias?"
+      "question": "¿Disfrutas escuchando y contando historias?",
+      "intelligence": "lingüística"
     },
     {
       "id": 9,
-      "question": "¿Eres bueno recordando citas o frases célebres?"
+      "question": "¿Eres bueno recordando citas o frases célebres?",
+      "intelligence": "lingüística"
     },
     {
       "id": 10,
-      "question": "¿Tienes un amplio vocabulario?"
+      "question": "¿Tienes un amplio vocabulario?",
+      "intelligence": "lingüística"
     },
     {
       "id": 11,
-      "question": "¿Te gustan las matemáticas y la ciencia?"
+      "question": "¿Te gustan las matemáticas y la ciencia?",
+      "intelligence": "lógica"
     },
     {
       "id": 12,
-      "question": "¿Disfrutas resolviendo acertijos y problemas de lógica?"
+      "question": "¿Disfrutas resolviendo acertijos y problemas de lógica?",
+      "intelligence": "lógica"
     },
     {
       "id": 13,
-      "question": "¿Eres bueno analizando datos y estadísticas?"
+      "question": "¿Eres bueno analizando datos y estadísticas?",
+      "intelligence": "lógica"
     },
     {
       "id": 14,
-      "question": "¿Encuentras patrones fácilmente en información compleja?"
+      "question": "¿Encuentras patrones fácilmente en información compleja?",
+      "intelligence": "lógica"
     },
     {
       "id": 15,
-      "question": "¿Te sientes cómodo trabajando con números y fórmulas?"
+      "question": "¿Te sientes cómodo trabajando con números y fórmulas?",
+      "intelligence": "lógica"
     },
     {
       "id": 16,
-      "question": "¿Te gustan los juegos de estrategia como el ajedrez?"
+      "question": "¿Te gustan los juegos de estrategia como el ajedrez?",
+      "intelligence": "lógica"
     },
     {
       "id": 17,
-      "question": "¿Disfrutas de los experimentos científicos?"
+      "question": "¿Disfrutas de los experimentos científicos?",
+      "intelligence": "lógica"
     },
     {
       "id": 18,
-      "question": "¿Eres capaz de planificar y organizar proyectos de manera efectiva?"
+      "question": "¿Eres capaz de planificar y organizar proyectos de manera efectiva?",
+      "intelligence": "lógica"
     },
     {
       "id": 19,
-      "question": "¿Encuentras fácil entender conceptos abstractos?"
+      "question": "¿Encuentras fácil entender conceptos abstractos?",
+      "intelligence": "lógica"
     },
     {
       "id": 20,
-      "question": "¿Disfrutas programando o trabajando con tecnología?"
+      "question": "¿Disfrutas programando o trabajando con tecnología?",
+      "intelligence": "lógica"
     },
     {
       "id": 21,
-      "question": "¿Te gusta dibujar, pintar o hacer esculturas?"
+      "question": "¿Te gusta dibujar, pintar o hacer esculturas?",
+      "intelligence": "visual"
     },
     {
       "id": 22,
-      "question": "¿Eres bueno interpretando mapas y gráficos?"
+      "question": "¿Eres bueno interpretando mapas y gráficos?",
+      "intelligence": "visual"
     },
     {
       "id": 23,
-      "question": "¿Te resulta fácil visualizar objetos en tres dimensiones?"
+      "question": "¿Te resulta fácil visualizar objetos en tres dimensiones?",
+      "intelligence": "visual"
     },
     {
       "id": 24,
-      "question": "¿Te gusta diseñar cosas?"
+      "question": "¿Te gusta diseñar cosas?",
+      "intelligence": "visual"
     },
     {
       "id": 25,
-      "question": "¿Tienes una buena percepción de los colores y las formas?"
+      "question": "¿Tienes una buena percepción de los colores y las formas?",
+      "intelligence": "visual"
     },
     {
       "id": 26,
-      "question": "¿Disfrutas resolviendo rompecabezas visuales?"
+      "question": "¿Disfrutas resolviendo rompecabezas visuales?",
+      "intelligence": "visual"
     },
     {
       "id": 27,
-      "question": "¿Eres bueno orientándote y encontrando caminos nuevos?"
+      "question": "¿Eres bueno orientándote y encontrando caminos nuevos?",
+      "intelligence": "visual"
     },
     {
       "id": 28,
-      "question": "¿Encuentras fácil recordar lugares y rutas?"
+      "question": "¿Encuentras fácil recordar lugares y rutas?",
+      "intelligence": "visual"
     },
     {
       "id": 29,
-      "question": "¿Te gusta trabajar con fotografía o video?"
+      "question": "¿Te gusta trabajar con fotografía o video?",
+      "intelligence": "visual"
     },
     {
       "id": 30,
-      "question": "¿Eres capaz de imaginar cómo se vería un objeto desde diferentes ángulos?"
+      "question": "¿Eres capaz de imaginar cómo se vería un objeto desde diferentes ángulos?",
+      "intelligence": "visual"
     },
     {
       "id": 31,
-      "question": "¿Te gusta escuchar música con frecuencia?"
+      "question": "¿Te gusta escuchar música con frecuencia?",
+      "intelligence": "musical"
     },
     {
       "id": 32,
-      "question": "¿Disfrutas tocando instrumentos musicales?"
+      "question": "¿Disfrutas tocando instrumentos musicales?",
+      "intelligence": "musical"
     },
     {
       "id": 33,
-      "question": "¿Te resulta fácil recordar melodías y letras de canciones?"
+      "question": "¿Te resulta fácil recordar melodías y letras de canciones?",
+      "intelligence": "musical"
     },
     {
       "id": 34,
-      "question": "¿Eres capaz de identificar diferentes instrumentos en una pieza musical?"
+      "question": "¿Eres capaz de identificar diferentes instrumentos en una pieza musical?",
+      "intelligence": "musical"
     },
     {
       "id": 35,
-      "question": "¿Te gusta componer o improvisar música?"
+      "question": "¿Te gusta componer o improvisar música?",
+      "intelligence": "musical"
     },
     {
       "id": 36,
-      "question": "¿Disfrutas cantando, ya sea solo o en un grupo?"
+      "question": "¿Disfrutas cantando, ya sea solo o en un grupo?",
+      "intelligence": "musical"
     },
     {
       "id": 37,
-      "question": "¿Eres bueno reconociendo ritmos y patrones musicales?"
+      "question": "¿Eres bueno reconociendo ritmos y patrones musicales?",
+      "intelligence": "musical"
     },
     {
       "id": 38,
-      "question": "¿Te sientes atraído por diferentes géneros musicales?"
+      "question": "¿Te sientes atraído por diferentes géneros musicales?",
+      "intelligence": "musical"
     },
     {
       "id": 39,
-      "question": "¿Tienes buen oído para afinar instrumentos?"
+      "question": "¿Tienes buen oído para afinar instrumentos?",
+      "intelligence": "musical"
     },
     {
       "id": 40,
-      "question": "¿Te resulta fácil aprender nuevas canciones?"
+      "question": "¿Te resulta fácil aprender nuevas canciones?",
+      "intelligence": "musical"
     },
     {
       "id": 41,
-      "question": "¿Te gusta participar en deportes y actividades físicas?"
+      "question": "¿Te gusta participar en deportes y actividades físicas?",
+      "intelligence": "corporal"
     },
     {
       "id": 42,
-      "question": "¿Eres bueno bailando o practicando algún arte marcial?"
+      "question": "¿Eres bueno bailando o practicando algún arte marcial?",
+      "intelligence": "corporal"
     },
     {
       "id": 43,
-      "question": "¿Te resulta fácil aprender habilidades a través de la práctica física?"
+      "question": "¿Te resulta fácil aprender habilidades a través de la práctica física?",
+      "intelligence": "corporal"
     },
     {
       "id": 44,
-      "question": "¿Disfrutas trabajando con tus manos, como en la carpintería o la jardinería?"
+      "question": "¿Disfrutas trabajando con tus manos, como en la carpintería o la jardinería?",
+      "intelligence": "corporal"
     },
     {
       "id": 45,
-      "question": "¿Te sientes cómodo actuando en obras de teatro o performances?"
+      "question": "¿Te sientes cómodo actuando en obras de teatro o performances?",
+      "intelligence": "corporal"
     },
     {
       "id": 46,
-      "question": "¿Eres bueno coordinando tus movimientos y teniendo buen equilibrio?"
+      "question": "¿Eres bueno coordinando tus movimientos y teniendo buen equilibrio?",
+      "intelligence": "corporal"
     },
     {
       "id": 47,
-      "question": "¿Disfrutas de actividades al aire libre, como el senderismo o el ciclismo?"
+      "question": "¿Disfrutas de actividades al aire libre, como el senderismo o el ciclismo?",
+      "intelligence": "corporal"
     },
     {
       "id": 48,
-      "question": "¿Te sientes energizado después de hacer ejercicio?"
+      "question": "¿Te sientes energizado después de hacer ejercicio?",
+      "intelligence": "corporal"
     },
     {
       "id": 49,
-      "question": "¿Eres capaz de expresar tus emociones a través del movimiento?"
+      "question": "¿Eres capaz de expresar tus emociones a través del movimiento?",
+      "intelligence": "corporal"
     },
     {
       "id": 50,
-      "question": "¿Te gusta construir y arreglar cosas?"
+      "question": "¿Te gusta construir y arreglar cosas?",
+      "intelligence": "corporal"
     },
     {
       "id": 51,
-      "question": "¿Te gusta reflexionar sobre tus pensamientos y emociones?"
+      "question": "¿Te gusta reflexionar sobre tus pensamientos y emociones?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 52,
-      "question": "¿Eres bueno identificando tus fortalezas y debilidades?"
+      "question": "¿Eres bueno identificando tus fortalezas y debilidades?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 53,
-      "question": "¿Te sientes cómodo pasando tiempo a solas?"
+      "question": "¿Te sientes cómodo pasando tiempo a solas?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 54,
-      "question": "¿Te gusta llevar un diario personal?"
+      "question": "¿Eres capaz de identificar qué te motiva y qué te frustra?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 55,
-      "question": "¿Eres capaz de fijarte metas y trabajar para alcanzarlas?"
+      "question": "¿Te gusta establecer metas personales y trabajar para alcanzarlas?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 56,
-      "question": "¿Disfrutas meditando o practicando técnicas de relajación?"
+      "question": "¿Eres consciente de cómo tus emociones afectan tus decisiones?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 57,
-      "question": "¿Eres consciente de tus estados de ánimo y cómo afectan tu comportamiento?"
+      "question": "¿Te resulta fácil analizar y reflexionar sobre tus experiencias?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 58,
-      "question": "¿Te sientes seguro tomando decisiones importantes?"
+      "question": "¿Disfrutas de la autoexploración y el autodescubrimiento?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 59,
-      "question": "¿Te resulta fácil aprender de tus errores?"
+      "question": "¿Eres bueno manejando el estrés y las emociones difíciles?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 60,
-      "question": "¿Eres capaz de mantener la motivación en proyectos a largo plazo?"
+      "question": "¿Te gusta aprender sobre filosofía o aspectos profundos de la vida?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 61,
-      "question": "¿Te gusta trabajar en equipo y colaborar con otros?"
+      "question": "¿Te gusta reflexionar sobre tus pensamientos y emociones?",
+      "intelligence": "intrapersonal"
     },
     {
       "id": 62,
-      "question": "¿Eres bueno entendiendo los sentimientos y necesidades de las personas?"
+      "question": "¿Eres bueno identificando tus fortalezas y debilidades?",
+      "intelligence": "intrapersonal"
     },
     {
       "id": 63,
-      "question": "¿Te resulta fácil hacer amigos y mantener relaciones?"
+      "question": "¿Te sientes cómodo pasando tiempo a solas?",
+      "intelligence": "intrapersonal"
     },
     {
       "id": 64,
-      "question": "¿Disfrutas ayudando a los demás a resolver sus problemas?"
+      "question": "¿Eres capaz de identificar qué te motiva y qué te frustra?",
+      "intelligence": "intrapersonal"
     },
     {
       "id": 65,
-      "question": "¿Eres bueno mediando conflictos y negociando?"
+      "question": "¿Te gusta establecer metas personales y trabajar para alcanzarlas?",
+      "intelligence": "intrapersonal"
     },
     {
       "id": 66,
-      "question": "¿Te sientes cómodo liderando grupos y organizando actividades?"
+      "question": "¿Eres consciente de cómo tus emociones afectan tus decisiones?",
+      "intelligence": "intrapersonal"
     },
     {
       "id": 67,
-      "question": "¿Te resulta fácil captar el lenguaje corporal y las señales sociales?"
+      "question": "¿Te resulta fácil analizar y reflexionar sobre tus experiencias?",
+      "intelligence": "intrapersonal"
     },
     {
       "id": 68,
-      "question": "¿Te gusta participar en actividades comunitarias o voluntariado?"
+      "question": "¿Disfrutas de la autoexploración y el autodescubrimiento?",
+      "intelligence": "intrapersonal"
     },
     {
       "id": 69,
-      "question": "¿Eres capaz de adaptar tu comportamiento según las diferentes situaciones sociales?"
+      "question": "¿Eres bueno manejando el estrés y las emociones difíciles?",
+      "intelligence": "intrapersonal"
     },
     {
       "id": 70,
-      "question": "¿Te gusta pasar tiempo al aire libre, en la naturaleza?"
+      "question": "¿Te gusta aprender sobre filosofía o aspectos profundos de la vida?",
+      "intelligence": "intrapersonal"
     },
     {
       "id": 71,
-      "question": "¿Eres bueno identificando diferentes especies de plantas y animales?"
+      "question": "¿Te gusta pasar tiempo al aire libre, en la naturaleza?",
+      "intelligence": "naturalista"
     },
     {
       "id": 72,
-      "question": "¿Te sientes atraído por temas relacionados con la ecología y la conservación?"
+      "question": "¿Eres bueno identificando diferentes especies de plantas y animales?",
+      "intelligence": "naturalista"
     },
     {
       "id": 73,
-      "question": "¿Disfrutas cuidando de plantas y animales?"
+      "question": "¿Te sientes atraído por temas relacionados con la ecología y la conservación?",
+      "intelligence": "naturalista"
     },
     {
       "id": 74,
-      "question": "¿Te gusta observar fenómenos naturales, como el clima y las estrellas?"
+      "question": "¿Disfrutas cuidando de plantas y animales?",
+      "intelligence": "naturalista"
     },
     {
       "id": 75,
-      "question": "¿Eres bueno reconociendo patrones en la naturaleza?"
+      "question": "¿Te gusta observar fenómenos naturales, como el clima y las estrellas?",
+      "intelligence": "naturalista"
     },
     {
       "id": 76,
-      "question": "¿Te sientes conectado con el medio ambiente y preocupado por su protección?"
+      "question": "¿Eres bueno reconociendo patrones en la naturaleza?",
+      "intelligence": "naturalista"
     },
     {
       "id": 77,
-      "question": "¿Disfrutas practicando actividades como la jardinería o la pesca?"
+      "question": "¿Te sientes conectado con el medio ambiente y preocupado por su protección?",
+      "intelligence": "naturalista"
     },
     {
       "id": 78,
-      "question": "¿Te gusta explorar diferentes ecosistemas y hábitats?"
+      "question": "¿Disfrutas practicando actividades como la jardinería o la pesca?",
+      "intelligence": "naturalista"
     },
     {
       "id": 79,
-      "question": "¿Eres capaz de identificar y clasificar diferentes elementos naturales?"
+      "question": "¿Te gusta explorar diferentes ecosistemas y hábitats?",
+      "intelligence": "naturalista"
     },
     {
       "id": 80,
-      "question": "¿Eres bueno resolviendo problemas prácticos del día a día?"
+      "question": "¿Eres capaz de identificar y clasificar diferentes elementos naturales?",
+      "intelligence": "naturalista"
     }
   ]
 }

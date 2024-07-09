@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import multipleIntelligenceIcon from "../assets/icons/multiple-intelligence.png";
 import menuIcon from "../assets/icons/menu.png";
 import menuExitIcon from "../assets/icons/close.png";
@@ -30,6 +31,10 @@ function Header() {
     };
   }, [positionScroll]);
 
+  const handleChange = () => {
+    setHiddenScroll(true);
+  };
+
   return (
     <header
       className={`z-20 h-24 w-full fixed top-0 left-0 bg-green-moss py-1 transition-transform duration-250 ${
@@ -44,7 +49,7 @@ function Header() {
         />
 
         <img
-          className="hidden h-2/3 max-sm:mr-10 max-sm:block relative z-40"
+          className="hidden h-2/3 max-sm:mr-10 max-sm:block relative z-40 cursor-pointer"
           src={menu ? menuExitIcon : menuIcon}
           alt="menu icon"
           onClick={handleMenu}
@@ -57,20 +62,20 @@ function Header() {
               : "max-sm:-translate-y-[100vh]"
           }`}
         >
-          <li
-            className={`text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl`}
-          >
-            Teoría de las inteligencias múltiples
+          <li className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
+            <Link to="/" onClick={handleChange}>
+              Teoría de las inteligencias múltiples
+            </Link>
           </li>
-          <li
-            className={`text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl`}
-          >
-            Test de las inteligencias múltiples
+          <li className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
+            <Link to="/quizz" onClick={handleChange}>
+              Test de las inteligencias múltiples
+            </Link>
           </li>
-          <li
-            className={`text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl`}
-          >
-            Tipos de inteligencias
+          <li className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
+            <Link to="/intelligences" onClick={handleChange}>
+              Tipos de inteligencias
+            </Link>
           </li>
         </ul>
       </nav>
