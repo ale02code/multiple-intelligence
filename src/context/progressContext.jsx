@@ -11,10 +11,11 @@ export function useProgress() {
 // Proveedor del contexto que contendrá el estado y las funciones relacionadas
 export function ProgressProvider({ children }) {
   const [progress, setProgress] = useState(0);
+  const [visible, setVisible] = useState(false);
 
   const incrementProgress = () => {
     setProgress((prevProgress) =>
-      prevProgress < 100 ? prevProgress + 12.5 : prevProgress
+      prevProgress == 100 ? setVisible(true) : prevProgress + 12.5
     );
     scrollToTop();
   };
@@ -33,7 +34,14 @@ export function ProgressProvider({ children }) {
 
   return (
     <ProgressContext.Provider
-      value={{ progress, incrementProgress, resetProgress, scrollToTop }}
+      value={{
+        progress,
+        incrementProgress,
+        resetProgress,
+        scrollToTop,
+        setVisible,
+        visible,
+      }}
     >
       {children}
     </ProgressContext.Provider>

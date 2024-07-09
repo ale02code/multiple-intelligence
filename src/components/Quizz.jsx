@@ -3,9 +3,10 @@ import Progress from "./Progress";
 import Question from "./Question";
 import { useProgress } from "../context/progressContext";
 import questionsData from "../data/questions.json";
+import IntelligenceWinner from "./IntelligenceWinner";
 
 function Quizz() {
-  const { incrementProgress, resetProgress } = useProgress();
+  const { incrementProgress, resetProgress, visible, setVisible } = useProgress();
   const [questions, setQuestions] = useState([]);
   const [questionRange, setQuestionRange] = useState({ first: 0, last: 10 });
   const [selectedAnswers, setSelectedAnswers] = useState(Array(10).fill(null));
@@ -38,35 +39,38 @@ function Quizz() {
   };
 
   return (
-    <div className="h-auto w-screen flex flex-col justify-start items-center">
-      <section className="mt-28 mb-10 overflow-x-hidden flex justify-start items-center gap-5 flex-col">
-        <Progress />
-        {questions.map((q, index) => (
-          <Question
-            key={q.id}
-            question={q.question}
-            onAnswerSelect={(answerIndex) =>
-              handleAnswerSelect(index, answerIndex)
-            }
-            selectedAnswer={selectedAnswers[index]}
-          />
-        ))}
-        <div className="flex justify-between items-center w-full">
-          <button
-            onClick={resetProgress}
-            className="px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-          >
-            Volver
-          </button>
-          <button
-            onClick={handleNext}
-            className={`px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50`}
-          >
-            Seguir
-          </button>
-        </div>
-      </section>
-    </div>
+    <>
+      <div className="h-auto w-screen flex flex-col justify-start items-center">
+        <section className="mt-28 mb-10 overflow-x-hidden flex justify-start items-center gap-5 flex-col">
+          <Progress />
+          {questions.map((q, index) => (
+            <Question
+              key={q.id}
+              question={q.question}
+              onAnswerSelect={(answerIndex) =>
+                handleAnswerSelect(index, answerIndex)
+              }
+              selectedAnswer={selectedAnswers[index]}
+            />
+          ))}
+          <div className="flex justify-between items-center w-full">
+            <button
+              onClick={resetProgress}
+              className="px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            >
+              Volver
+            </button>
+            <button
+              onClick={handleNext}
+              className={`px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50`}
+            >
+              Seguir
+            </button>
+          </div>
+        </section>
+      </div>
+      <IntelligenceWinner visible={visible} />
+    </>
   );
 }
 
