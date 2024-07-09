@@ -4,9 +4,11 @@ import Question from "./Question";
 import { useProgress } from "../context/progressContext";
 import questionsData from "../data/questions.json";
 import IntelligenceWinner from "./IntelligenceWinner";
+import { useIntelligence } from "../context/intelligenceSelect";
 
 function Quizz() {
-  const { incrementProgress, resetProgress, visible, setVisible } = useProgress();
+  const { incrementProgress, resetProgress, visible, setVisible } =
+    useProgress();
   const [questions, setQuestions] = useState([]);
   const [questionRange, setQuestionRange] = useState({ first: 0, last: 10 });
   const [selectedAnswers, setSelectedAnswers] = useState(Array(10).fill(null));
@@ -69,7 +71,7 @@ function Quizz() {
           </div>
         </section>
       </div>
-      <IntelligenceWinner visible={visible} />
+      {<IntelligenceWinner visible={visible} setVisible={setVisible} />}
     </>
   );
 }

@@ -2,19 +2,19 @@ import React from "react";
 import { useProgress } from "../context/progressContext";
 
 function Progress() {
-  const { progress } = useProgress(); // Añadir paréntesis para llamar a la función
+  const { progress } = useProgress(); // Destructure progress from useProgress context
 
   return (
-    <div id="progress" className="overflow-hidden w-full">
+    <div className="overflow-hidden w-full">
       <div className="bg-gray-200 h-4 rounded-full">
         <div
           className="bg-green-500 h-full rounded-full transition-all"
-          style={{ width: `${progress}%` }}
+          style={{ width: `${progress}%` }} // Set dynamic width based on progress
         ></div>
       </div>
-      <div className="text-xs text-center mt-1">
-        Progreso: {Math.round(progress)}%
-      </div>
+      {/* <div className="text-xs text-center mt-1">
+        Progreso: {Math.round(progress)}% 
+      </div> */}
     </div>
   );
 }

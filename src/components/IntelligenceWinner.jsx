@@ -2,10 +2,14 @@ import React from "react";
 import imgTest from "../assets/imgs/HOWARD GARDNER.jpeg";
 import closeModule from "../assets/icons/x.png";
 
-function IntelligenceWinner({ visible }) {
+function IntelligenceWinner({ visible, setVisible }) {
   if (!visible) {
     return null; // If not visible, return null or some fallback content
   }
+
+  const handleClose = () => {
+    setVisible(false);
+  };
 
   return (
     <section className="h-screen w-screen flex justify-center items-center fixed z-40 top-0 bg-black bg-opacity-50">
@@ -20,6 +24,7 @@ function IntelligenceWinner({ visible }) {
         </p>
         <img className="h-80" src={imgTest} alt="" />
         <img
+          onClick={handleClose}
           className="h-6 absolute z-50 top-5 right-5 hover:cursor-pointer"
           src={closeModule}
           alt="close module"

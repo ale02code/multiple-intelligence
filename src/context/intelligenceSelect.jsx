@@ -7,10 +7,19 @@ export function useIntelligence() {
 }
 
 export function ProgressProvider({ children }) {
-  const [winner, setWinner] = useState("");
+  const [countInt, setCountInt] = useState({
+    linguistica: 0,
+    logica: 0,
+    visual: 0,
+    musical: 0,
+    corporal: 0,
+    interpersonal: 0,
+    intrapersonal: 0,
+    naturalista: 0,
+  });
 
   return (
-    <IntelligenceContext.Provider value={{ winner, setWinner }}>
+    <IntelligenceContext.Provider value={{ countInt, setCountInt }}>
       {children}
     </IntelligenceContext.Provider>
   );

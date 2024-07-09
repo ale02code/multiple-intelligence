@@ -1,0 +1,44 @@
+{
+  "intelligences": [
+    {
+      "name": "lingüística",
+      "definicion": "Es la inteligencia relacionada con nuestra capacidad verbal, con el lenguaje y con las palabras en general. Esta inteligencia nos capacita para escribir poemas, historias, etc.",
+      "alto_nivel": "Se puede encontrar en escritores, poetas, periodistas y oradores, entre otros. Está en los niños a los que les encanta redactar historias, leer, jugar con rimas, trabalenguas y en los que aprenden con facilidad otros idiomas."
+    },
+    {
+      "name": "lógica",
+      "definicion": "Tiene que ver con el desarrollo de pensamiento abstracto, con la precisión y la organización a través de pautas o secuencias. Comprende las capacidades que necesitamos para manejar operaciones matemáticas y razonar correctamente.",
+      "alto_nivel": "Se ve en científicos, matemáticos, contadores, ingenieros y analistas de sistemas, entre otros. Los niños que la han desarrollado analizan con facilidad planteos y problemas. Se acercan a los cálculos numéricos, estadísticas y presupuestos con entusiasmo."
+    },
+    {
+      "name": "visual",
+      "definicion": "Es la capacidad para integrar elementos, percibirlos y ordenarlos en el espacio y poder establecer relaciones de tipo metafórico entre ellos. Esta inteligencia nos capacita para crear diseños, cuadros, diagramas y construir cosas.",
+      "alto_nivel": "Se encuentra en pilotos, marinos, escultores, pintores, arquitectos y decoradores, entre otros. Está en los niños que estudian mejor con gráficos, esquemas, cuadros. Les gusta hacer mapas conceptuales y mentales. Entienden muy bien planos y croquis."
+    },
+    {
+      "name": "musical",
+      "definicion": "Se relaciona directamente con las habilidades musicales, como el ritmo y la melodía. Nos sirve para crear sonidos nuevos para expresar emociones y sentimientos a través de la música.",
+      "alto_nivel": "Está presente en músicos, cantantes, compositores, directores de orquesta, críticos musicales, bailarines, etc. Los niños que la evidencian se sienten atraídos por los sonidos de la naturaleza y por todo tipo de melodías. Disfrutan siguiendo el compás con el pie, golpeando o sacudiendo algún objeto rítmicamente."
+    },
+    {
+      "name": "corporal",
+      "definicion": "Abarca todo lo relacionado con el movimiento tanto corporal como el de los objetos y los reflejos. Se usa para efectuar actividades como deportes, que requieren coordinación y ritmo controlado.",
+      "alto_nivel": "Se observa en atletas, bailarines, cirujanos y artesanos, entre otros. Se aprecia en los niños que se destacan en actividades deportivas, danza, expresión corporal y/o en trabajos de construcciones utilizando diversos materiales concretos. También en aquellos que son hábiles en la ejecución de instrumentos."
+    },
+    {
+      "name": "interpersonal",
+      "definicion": "Implica la capacidad de establecer relaciones con otras personas. Incluye las habilidades para mostrar expresiones faciales, controlar la voz y expresar gestos en determinadas ocasiones.",
+      "alto_nivel": "Se encuentra en actores, políticos, buenos vendedores y docentes exitosos, entre otros. La tienen los niños que disfrutan trabajando en grupo, que son convincentes en sus negociaciones con sus compañeros y también con los mayores, que entienden a los demás."
+    },
+    {
+      "name": "intrapersonal",
+      "definicion": "Se refiere al conocimiento de uno mismo y todos los procesos relacionados, como autoconfianza y automotivación. Es como nuestra conciencia. Nos sirve para entender lo que hacemos y valorar nuestras propias acciones.",
+      "alto_nivel": "Se encuentra muy desarrollada en teólogos, filósofos y psicólogos, entre otros. La evidencian los niños que son reflexivos, de razonamiento acertado y suelen ser consejeros de sus compañeros."
+    },
+    {
+      "name": "naturalista",
+      "definicion": "Es la capacidad de distinguir, clasificar y utilizar elementos del medio ambiente, objetos, animales o plantas. Tanto del ambiente urbano como suburbano o rural.",
+      "alto_nivel": "Poseen esta inteligencia la gente amante del campo, botánicos, cazadores, ecologistas y paisajistas, entre otros. Se da en los niños que aman los animales, las plantas; que reconocen y les gusta investigar características del mundo natural y su relación con el hombre."
+    }
+  ]
+}

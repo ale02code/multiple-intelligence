@@ -15,7 +15,7 @@ export function ProgressProvider({ children }) {
 
   const incrementProgress = () => {
     setProgress((prevProgress) =>
-      prevProgress == 100 ? setVisible(true) : prevProgress + 12.5
+      prevProgress == 87.5 ? setVisible(true) : prevProgress + 12.5
     );
     scrollToTop();
   };
