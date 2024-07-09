@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 
-function Question({ question }) {
+function Question({ question}) {
   const [selectedButton, setSelectedButton] = useState(null);
 
   const handleButtonClick = (index) => {
     setSelectedButton(index === selectedButton ? null : index);
   };
 
-  // Definir configuraciones de botones
   const buttonConfigs = [
     {
       size: "w-20 h-20",

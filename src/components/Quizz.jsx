@@ -7,34 +7,34 @@ import questionsData from "../data/questions.json";
 function Quizz() {
   const { incrementProgress, resetProgress } = useProgress();
   const [questions, setQuestions] = useState([]);
+  const [questionRange, setQuestionRange] = useState({ first: 0, last: 10 });
   const [selectedAnswers, setSelectedAnswers] = useState(Array(10).fill(null));
 
   useEffect(() => {
-    setQuestions(questionsData.questions.slice(0, 10)); // Cargar las primeras 10 preguntas al inicio
-  }, []);
+    setQuestions(
+      questionsData.questions.slice(questionRange.first, questionRange.last)
+    );
+  }, [questionRange]);
 
-  const handleAnswerSelect = (questionIndex, answerIndex) => {
-    const updatedAnswers = [...selectedAnswers];
-    updatedAnswers[questionIndex] = answerIndex;
-    setSelectedAnswers(updatedAnswers);
+  const addQuestions = () => {
+    setQuestionRange((prevRange) => ({
+      first: prevRange.last,
+      last: prevRange.last + 10,
+    }));
+    setSelectedAnswers(Array(10).fill(null));
   };
 
   const handleNext = () => {
-    // Verificar si todas las preguntas tienen una respuesta seleccionada
-    if (selectedAnswers.every((answer) => answer !== null)) {
-      incrementProgress();
-      setQuestions(
-        questionsData.questions.slice(
-          selectedAnswers.length,
-          selectedAnswers.length + 10
-        )
-      ); // Cargar las siguientes 10 preguntas
-      setSelectedAnswers(Array(10).fill(null)); // Reiniciar respuestas seleccionadas para las nuevas preguntas
-    } else {
-      alert(
-        "Debes seleccionar una respuesta para cada pregunta antes de continuar."
-      );
-    }
+    incrementProgress();
+    addQuestions();
+  };
+
+  const handleAnswerSelect = (questionIndex, answerIndex) => {
+    setSelectedAnswers((prevAnswers) => {
+      const updatedAnswers = [...prevAnswers];
+      updatedAnswers[questionIndex] = answerIndex;
+      return updatedAnswers;
+    });
   };
 
   return (
@@ -60,7 +60,7 @@ function Quizz() {
           </button>
           <button
             onClick={handleNext}
-            className="px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className={`px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50`}
           >
             Seguir
           </button>
