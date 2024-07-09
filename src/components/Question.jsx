@@ -8,13 +8,41 @@ function Question({ question }) {
         <div className="p-4 md:p-6 flex flex-col justify-center items-center w-full">
           <h2 className="text-xl font-semibold mb-4">{question}</h2>
           <div className="flex justify-center items-center gap-2">
-            <button className={"rounded-full w-20 h-20 bg-green-500"} />
-            <button className={"rounded-full w-16 h-16 bg-green-500"} />
-            <button className={"rounded-full w-12 h-12 bg-green-500"} />
-            <button className={"rounded-full w-9 h-9 bg-gray-300"} />
-            <button className={"rounded-full w-12 h-12 bg-red-500"} />
-            <button className={"rounded-full w-16 h-16 bg-red-500"} />
-            <button className={"rounded-full w-20 h-20 bg-red-500"} />
+            <button
+              className={
+                "rounded-full w-20 h-20 border-2 border-green-500 hover:bg-green-600 transition-all duration-200"
+              }
+            />
+            <button
+              className={
+                "rounded-full w-16 h-16 border-2 border-green-500 hover:bg-green-600 transition-all duration-200"
+              }
+            />
+            <button
+              className={
+                "rounded-full w-12 h-12 border-2 border-green-500 hover:bg-green-600 transition-all duration-200"
+              }
+            />
+            <button
+              className={
+                "rounded-full w-9 h-9 border-2 border-neutral-500 hover:bg-neutral-600 transition-all duration-200"
+              }
+            />
+            <button
+              className={
+                "rounded-full w-12 h-12 border-2 border-red-500 hover:bg-red-600 transition-all duration-200"
+              }
+            />
+            <button
+              className={
+                "rounded-full w-16 h-16 border-2 border-red-500 hover:bg-red-600 transition-all duration-200"
+              }
+            />
+            <button
+              className={
+                "rounded-full w-20 h-20 border-2 border-red-500 hover:bg-red-600 transition-all duration-200"
+              }
+            />
           </div>
           <div className="flex justify-between w-full mt-1">
             <p>Estoy de acuerdo</p>

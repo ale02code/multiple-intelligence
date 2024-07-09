@@ -13,15 +13,28 @@ export function ProgressProvider({ children }) {
   const [progress, setProgress] = useState(0);
 
   const incrementProgress = () => {
-    setProgress((prevProgress) => (prevProgress < 100 ? prevProgress + 12.5 : prevProgress));
+    setProgress((prevProgress) =>
+      prevProgress < 100 ? prevProgress + 12.5 : prevProgress
+    );
+    scrollToTop();
   };
 
   const resetProgress = () => {
-    setProgress((prevProgress) => (prevProgress > 0 ? prevProgress - 12.5 : 0));
+    setProgress(0);
+    scrollToTop();
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
-    <ProgressContext.Provider value={{ progress, incrementProgress, resetProgress }}>
+    <ProgressContext.Provider
+      value={{ progress, incrementProgress, resetProgress, scrollToTop }}
+    >
       {children}
     </ProgressContext.Provider>
   );
