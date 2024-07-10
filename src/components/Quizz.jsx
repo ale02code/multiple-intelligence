@@ -31,7 +31,7 @@ function Quizz() {
   };
 
   useEffect(() => {
-    console.log(countInt.linguistica);
+    console.log(countInt);
   }, [countInt]);
 
   const handleNext = () => {
@@ -53,17 +53,8 @@ function Quizz() {
         <div className="h-auto w-screen flex flex-col justify-start items-center">
           <section className="mt-28 mb-10 overflow-x-hidden flex justify-start items-center gap-5 flex-col">
             <Progress />
-            {questions.map((q, index) => (
-              <Question
-                key={q.id}
-                question={q.question}
-                intelligenceType={q.intelligence} // Pasa el tipo de inteligencia a cada pregunta
-                onAnswerSelect={(answerIndex) =>
-                  handleAnswerSelect(index, answerIndex)
-                }
-                onButtonClick={() => handlePoints(q.intelligence)} // Pasa handlePoints con intelligenceType
-                selectedAnswer={selectedAnswers[index]}
-              />
+            {questions.map((q) => (
+              <Question key={q.id} question={q.question}  />
             ))}
             <div className="flex justify-between items-center w-full">
               <button

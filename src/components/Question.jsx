@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Question({ question, intelligenceType, onButtonClick }) {
+function Question({ question }) {
   const [selectedButton, setSelectedButton] = useState(null);
 
   const handleButtonClick = (index) => {
@@ -13,42 +13,49 @@ function Question({ question, intelligenceType, onButtonClick }) {
       border: "border-green-500",
       baseBg: "bg-white",
       activeBg: "bg-green-600",
+      points: 3,
     },
     {
       size: "w-16 h-16",
       border: "border-green-500",
       baseBg: "bg-white",
       activeBg: "bg-green-600",
+      points: 2,
     },
     {
       size: "w-12 h-12",
       border: "border-green-500",
       baseBg: "bg-white",
       activeBg: "bg-green-600",
+      points: 1,
     },
     {
       size: "w-9 h-9",
       border: "border-neutral-500",
       baseBg: "bg-white",
       activeBg: "bg-neutral-600",
+      points: 0,
     },
     {
       size: "w-12 h-12",
       border: "border-red-500",
       baseBg: "bg-white",
       activeBg: "bg-red-600",
+      points: -1,
     },
     {
       size: "w-16 h-16",
       border: "border-red-500",
       baseBg: "bg-white",
       activeBg: "bg-red-600",
+      points: -2,
     },
     {
       size: "w-20 h-20",
       border: "border-red-500",
       baseBg: "bg-white",
       activeBg: "bg-red-600",
+      points: -3,
     },
   ];
 
@@ -64,7 +71,7 @@ function Question({ question, intelligenceType, onButtonClick }) {
                 className={`rounded-full border-2 transition-all duration-200 focus:outline-none ${
                   selectedButton === index ? config.activeBg : config.baseBg
                 } ${config.size} ${config.border}`}
-                onClick={() => handleButtonClick(index)}
+                onClick={() => handleButtonClick(index, buttonConfigs.points)}
               />
             ))}
           </div>

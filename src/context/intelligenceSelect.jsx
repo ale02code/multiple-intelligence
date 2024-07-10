@@ -10,7 +10,7 @@ export function useIntelligence() {
 
 // Proveedor de contexto
 export function IntelligenceProvider({ children }) {
-  // Estado inicial
+  // Estado inicial de los puntos por tipo de inteligencia
   const [countInt, setCountInt] = useState({
     linguistica: 0,
     logica: 0,
