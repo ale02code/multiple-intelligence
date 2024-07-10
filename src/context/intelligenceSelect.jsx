@@ -1,12 +1,16 @@
 import React, { createContext, useContext, useState } from "react";
 
+// Crear el contexto
 const IntelligenceContext = createContext();
 
+// Hook personalizado para consumir el contexto
 export function useIntelligence() {
   return useContext(IntelligenceContext);
 }
 
-export function ProgressProvider({ children }) {
+// Proveedor de contexto
+export function IntelligenceProvider({ children }) {
+  // Estado inicial
   const [countInt, setCountInt] = useState({
     linguistica: 0,
     logica: 0,

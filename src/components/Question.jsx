@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-function Question({ question}) {
+function Question({ question, intelligenceType, onButtonClick }) {
   const [selectedButton, setSelectedButton] = useState(null);
 
   const handleButtonClick = (index) => {

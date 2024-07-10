@@ -31,10 +31,6 @@ function Header() {
     };
   }, [positionScroll]);
 
-  const handleChange = () => {
-    setHiddenScroll(true);
-  };
-
   return (
     <header
       className={`z-20 h-24 w-full fixed top-0 left-0 bg-green-moss py-1 transition-transform duration-250 ${
@@ -63,19 +59,13 @@ function Header() {
           }`}
         >
           <li className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
-            <Link to="/" onClick={handleChange}>
-              Teoría de las inteligencias múltiples
-            </Link>
+            <Link to="/">Teoría de las inteligencias múltiples</Link>
           </li>
           <li className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
-            <Link to="/quizz" onClick={handleChange}>
-              Test de las inteligencias múltiples
-            </Link>
+            <Link to="/quizz">Test de las inteligencias múltiples</Link>
           </li>
           <li className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
-            <Link to="/intelligences" onClick={handleChange}>
-              Tipos de inteligencias
-            </Link>
+            <Link to="/intelligences">Tipos de inteligencias</Link>
           </li>
         </ul>
       </nav>
