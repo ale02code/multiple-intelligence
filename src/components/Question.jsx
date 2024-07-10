@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useIntelligence } from "../context/intelligenceSelect";
 
-function Question({ question }) {
+function Question({ question, typeIntelligence }) {
   const [selectedButton, setSelectedButton] = useState(null);
+  const { countInt, setCountInt } = useIntelligence();
+
+  // useEffect(() => {
+  //   console.log(typeIntelligence);
+  // }, []);
 
   const handleButtonClick = (index) => {
     setSelectedButton(index === selectedButton ? null : index);
@@ -59,6 +65,13 @@ function Question({ question }) {
     },
   ];
 
+  // const handlePoints = (points) => {
+  //   setCountInt((prevCountInt) => ({
+  //     ...prevCountInt,
+  //     intelligenceType: prevCountInt.linguistica + points,
+  //   }));
+  // };
+
   return (
     <div className="max-w-lg bg-white rounded-xl shadow-md overflow-hidden w-full md:max-w-2xl text-[#685449] min-h-[185px]">
       <div className="md:flex">
@@ -71,7 +84,10 @@ function Question({ question }) {
                 className={`rounded-full border-2 transition-all duration-200 focus:outline-none ${
                   selectedButton === index ? config.activeBg : config.baseBg
                 } ${config.size} ${config.border}`}
-                onClick={() => handleButtonClick(index, buttonConfigs.points)}
+                onClick={() => {
+                  handleButtonClick(index);
+                  handlePoints(config.points);
+                }}
               />
             ))}
           </div>

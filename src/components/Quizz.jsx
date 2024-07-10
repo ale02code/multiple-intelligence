@@ -54,7 +54,7 @@ function Quizz() {
           <section className="mt-28 mb-10 overflow-x-hidden flex justify-start items-center gap-5 flex-col">
             <Progress />
             {questions.map((q) => (
-              <Question key={q.id} question={q.question}  />
+              <Question key={q.id} question={q.question} typeIntelligence={q.intelligence} />
             ))}
             <div className="flex justify-between items-center w-full">
               <button
