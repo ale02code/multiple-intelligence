@@ -20,8 +20,10 @@ export function ProgressProvider({ children }) {
     scrollToTop();
   };
 
-  const resetProgress = () => {
-    setProgress(0);
+  const decrementProgress = () => {
+    setProgress((prevProgress) =>
+      prevProgress == 0 ? prevProgress : prevProgress - 12.5
+    );
     scrollToTop();
   };
 
@@ -37,10 +39,10 @@ export function ProgressProvider({ children }) {
       value={{
         progress,
         incrementProgress,
-        resetProgress,
         scrollToTop,
         setVisible,
         visible,
+        decrementProgress,
       }}
     >
       {children}

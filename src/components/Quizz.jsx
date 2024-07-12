@@ -9,7 +9,7 @@ import intelligencesData from "../data/intelligences.json";
 import imgTest from "../assets/imgs/gatos-main.jpeg";
 
 function Quizz() {
-  const { incrementProgress, resetProgress, visible } = useProgress();
+  const { incrementProgress, decrementProgress, visible } = useProgress();
   const { countInt, setCountInt } = useIntelligence();
 
   const [questions, setQuestions] = useState([]);
@@ -30,6 +30,20 @@ function Quizz() {
     setSelectedAnswers(Array(10).fill(null));
   };
 
+  const lessQuestions = () => {
+    setQuestionRange((prevRange) => {
+      if (prevRange.first >= 10) {
+        return {
+          first: prevRange.first - 10,
+          last: prevRange.last - 10,
+        };
+      } else {
+        return prevRange;
+      }
+    });
+    setSelectedAnswers(Array(10).fill(null));
+  };
+
   useEffect(() => {
     console.log(countInt);
   }, [countInt]);
@@ -37,6 +51,11 @@ function Quizz() {
   const handleNext = () => {
     incrementProgress();
     addQuestions();
+  };
+
+  const handlePrevious = () => {
+    decrementProgress();
+    lessQuestions();
   };
 
   const handleAnswerSelect = (questionIndex, answerIndex) => {
@@ -80,9 +99,9 @@ function Quizz() {
                 onSelectAnswer={handleAnswerSelect}
               />
             ))}
-            <div className="flex justify-between items-center w-full">
+            <div className="flex justify-between items-center w-full max-sm:max-w-[95%]">
               <button
-                onClick={resetProgress}
+                onClick={handlePrevious}
                 className="px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
               >
                 Volver
@@ -98,11 +117,18 @@ function Quizz() {
         </div>
       )}
       {visible && (
-        <section className="mt-20 mb-10 h-screen w-screen flex justify-center items-center">
+        <section className="mt-28 mb-10 h-screen w-screen flex justify-center items-center">
           <div className="max-w-2xl w-[90%] h-auto flex flex-col justify-center items-center bg-[#F7E7CD] rounded-lg p-5 gap-5 relative">
-            <h3 className="text-4xl">{maxIntelligence.name}</h3>
-            <p className="text-lg">{maxIntelligence.definicion}</p>
-            <img className="h-80" src={imgTest} alt="test" />
+            <h3 className="text-4xl font-bold uppercase">
+              {maxIntelligence.name}
+            </h3>
+            <p className="text-lg text-justify">{maxIntelligence.definicion}</p>
+            <p className="text-lg text-justify">{maxIntelligence.high_level}</p>
+            <img
+              className="h-80 max-sm:h-auto object-cover"
+              src={maxIntelligence.img}
+              alt="test"
+            />
           </div>
         </section>
       )}

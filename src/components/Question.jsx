@@ -3,11 +3,23 @@ import { useIntelligence } from "../context/intelligenceSelect";
 
 function Question({ question, typeIntelligence }) {
   const [selectedButton, setSelectedButton] = useState(null);
+  const [previousPoints, setPreviousPoints] = useState(0);
   const { countInt, setCountInt } = useIntelligence();
 
   const handleButtonClick = (index, points) => {
+    // Restar el puntaje previo si hay un botón previamente seleccionado
+    if (selectedButton !== null) {
+      handlePoints(-previousPoints);
+    }
+
+    // Actualizar el botón seleccionado y el puntaje previo
     setSelectedButton(index === selectedButton ? null : index);
-    handlePoints(points);
+    setPreviousPoints(index === selectedButton ? 0 : points);
+
+    // Sumar el nuevo puntaje si se selecciona un nuevo botón
+    if (index !== selectedButton) {
+      handlePoints(points);
+    }
   };
 
   const handlePoints = (points) => {
@@ -19,49 +31,49 @@ function Question({ question, typeIntelligence }) {
 
   const buttonConfigs = [
     {
-      size: "w-20 h-20",
+      size: "w-20 h-20 max-sm:w-14 max-sm:h-14",
       border: "border-green-500",
       baseBg: "bg-white",
       activeBg: "bg-green-600",
       points: 3,
     },
     {
-      size: "w-16 h-16",
+      size: "w-16 h-16 max-sm:w-10 max-sm:h-10",
       border: "border-green-500",
       baseBg: "bg-white",
       activeBg: "bg-green-600",
       points: 2,
     },
     {
-      size: "w-12 h-12",
+      size: "w-12 h-12 max-sm:w-9 max-sm:h-9",
       border: "border-green-500",
       baseBg: "bg-white",
       activeBg: "bg-green-600",
       points: 1,
     },
     {
-      size: "w-9 h-9",
+      size: "w-9 h-9 max-sm:w-6 max-sm:h-6",
       border: "border-neutral-500",
       baseBg: "bg-white",
       activeBg: "bg-neutral-600",
       points: 0,
     },
     {
-      size: "w-12 h-12",
+      size: "w-12 h-12 max-sm:w-9 max-sm:h-9",
       border: "border-red-500",
       baseBg: "bg-white",
       activeBg: "bg-red-600",
       points: -1,
     },
     {
-      size: "w-16 h-16",
+      size: "w-16 h-16 max-sm:w-10 max-sm:h-10",
       border: "border-red-500",
       baseBg: "bg-white",
       activeBg: "bg-red-600",
       points: -2,
     },
     {
-      size: "w-20 h-20",
+      size: "w-20 h-20 max-sm:w-14 max-sm:h-14",
       border: "border-red-500",
       baseBg: "bg-white",
       activeBg: "bg-red-600",
@@ -70,11 +82,11 @@ function Question({ question, typeIntelligence }) {
   ];
 
   return (
-    <div className="max-w-lg bg-white rounded-xl shadow-md overflow-hidden w-full md:max-w-2xl text-[#685449] min-h-[185px]">
+    <div className="max-w-lg bg-white rounded-xl shadow-md overflow-hidden w-full md:max-w-2xl text-[#685449] min-h-[185px] max-sm:max-w-[95%]">
       <div className="md:flex">
         <div className="p-4 md:p-6 flex flex-col justify-center items-center w-full">
           <h2 className="text-xl font-semibold mb-4">{question}</h2>
-          <div className="flex justify-center items-center gap-2">
+          <div className="flex justify-center items-center gap-2 max-sm:gap-1">
             {buttonConfigs.map((config, index) => (
               <button
                 key={index}

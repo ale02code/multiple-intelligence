@@ -5,28 +5,22 @@ import Home from "./components/Home";
 import Quizz from "./components/Quizz";
 import { ProgressProvider } from "./context/progressContext"; // Importa el proveedor de contexto de progreso
 import { IntelligenceProvider } from "./context/intelligenceSelect"; // Importa el proveedor de contexto de inteligencia
+import IntelligencesView from "./components/IntelligencesView";
 
 function App() {
   return (
     <ProgressProvider>
-      {" "}
-      {/* Proveedor de contexto de progreso */}
       <IntelligenceProvider>
-        {" "}
-        {/* Proveedor de contexto de inteligencia */}
         <Router>
-          {" "}
-          {/* Envolvemos la aplicación con BrowserRouter */}
           <div className="font-lato w-screen overflow-hidden h-auto bg-[#F7E7CD]">
-            <Header />{" "}
-            {/* Componente de encabezado, visible en todas las rutas */}
+            <Header />
             <Routes>
-              {" "}
-              {/* Definición de rutas */}
-              <Route path="/" element={<Home />} />{" "}
-              {/* Ruta para la página de inicio */}
-              <Route path="/quizz" element={<Quizz />} />{" "}
-              {/* Ruta para la página de quizz */}
+              <Route path="/" element={<Home />} />
+              <Route path="/quizz" element={<Quizz />} />
+              <Route
+                path="/intelligences"
+                element={<IntelligencesView />}
+              ></Route>
             </Routes>
           </div>
         </Router>

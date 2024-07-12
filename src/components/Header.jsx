@@ -31,6 +31,12 @@ function Header() {
     };
   }, [positionScroll]);
 
+  const handleShow = () => {
+    if (window.innerWidth <= 1000) {
+      setMenu(false);
+    }
+  };
+
   return (
     <header
       className={`z-20 h-24 w-full fixed top-0 left-0 bg-green-moss py-1 transition-transform duration-250 ${
@@ -58,13 +64,19 @@ function Header() {
               : "max-sm:-translate-y-[100vh]"
           }`}
         >
-          <li className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
+          <li
+            className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl"
+            onClick={handleShow}
+          >
             <Link to="/">Teoría de las inteligencias múltiples</Link>
           </li>
-          <li className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
+          <li
+            className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl"
+            onClick={handleShow}
+          >
             <Link to="/quizz">Test de las inteligencias múltiples</Link>
           </li>
-          <li className="text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
+          <li className="hidden text-xl text-center capitalize hover:underline hover:cursor-pointer hover:text-neutral-200 max-sm:w-[90%] max-sm:text-2xl">
             <Link to="/intelligences">Tipos de inteligencias</Link>
           </li>
         </ul>
