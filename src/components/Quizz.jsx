@@ -3,8 +3,8 @@ import Progress from "./Progress";
 import Question from "./Question";
 import { useProgress } from "../context/progressContext";
 import { useIntelligence } from "../context/intelligenceSelect";
-
 import questionsData from "../data/questions.json";
+import IntelligenceWinner from "./IntelligenceWinner";
 
 import imgTest from "../assets/imgs/gatos-main.jpeg";
 
@@ -54,7 +54,11 @@ function Quizz() {
           <section className="mt-28 mb-10 overflow-x-hidden flex justify-start items-center gap-5 flex-col">
             <Progress />
             {questions.map((q) => (
-              <Question key={q.id} question={q.question} typeIntelligence={q.intelligence} />
+              <Question
+                key={q.id}
+                question={q.question}
+                typeIntelligence={q.intelligence}
+              />
             ))}
             <div className="flex justify-between items-center w-full">
               <button

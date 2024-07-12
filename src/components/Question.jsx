@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useIntelligence } from "../context/intelligenceSelect";
 
-function Question({ question, typeIntelligence }) {
+function Question({ question}) {
   const [selectedButton, setSelectedButton] = useState(null);
   const { countInt, setCountInt } = useIntelligence();
 
