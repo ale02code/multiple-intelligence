@@ -4,7 +4,6 @@ import Question from "./Question";
 import { useProgress } from "../context/progressContext";
 import { useIntelligence } from "../context/intelligenceSelect";
 import questionsData from "../data/questions.json";
-import IntelligenceWinner from "./IntelligenceWinner";
 
 import imgTest from "../assets/imgs/gatos-main.jpeg";
 
