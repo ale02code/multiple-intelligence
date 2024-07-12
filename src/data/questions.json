@@ -7,7 +7,7 @@
     },
     {
       "id": 2,
-      "question": "¿Disfrutas escribie ndo ensayos, poemas o historias?",
+      "question": "¿Disfrutas escribiendo ensayos, poemas o historias?",
       "intelligence": "linguistica"
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "id": 12,
-      "question": "¿Disfrutas resolviendo acertijos y problemas de logica?",
+      "question": "¿Disfrutas resolviendo acertijos y problemas de lógica?",
       "intelligence": "logica"
     },
     {
@@ -253,102 +253,102 @@
     {
       "id": 51,
       "question": "¿Te gusta reflexionar sobre tus pensamientos y emociones?",
-      "intelligence": "interpersonal"
+      "intelligence": "intrapersonal"
     },
     {
       "id": 52,
       "question": "¿Eres bueno identificando tus fortalezas y debilidades?",
-      "intelligence": "interpersonal"
+      "intelligence": "intrapersonal"
     },
     {
       "id": 53,
       "question": "¿Te sientes cómodo pasando tiempo a solas?",
-      "intelligence": "interpersonal"
+      "intelligence": "intrapersonal"
     },
     {
       "id": 54,
       "question": "¿Eres capaz de identificar qué te motiva y qué te frustra?",
-      "intelligence": "interpersonal"
+      "intelligence": "intrapersonal"
     },
     {
       "id": 55,
       "question": "¿Te gusta establecer metas personales y trabajar para alcanzarlas?",
-      "intelligence": "interpersonal"
+      "intelligence": "intrapersonal"
     },
     {
       "id": 56,
       "question": "¿Eres consciente de cómo tus emociones afectan tus decisiones?",
-      "intelligence": "interpersonal"
+      "intelligence": "intrapersonal"
     },
     {
       "id": 57,
       "question": "¿Te resulta fácil analizar y reflexionar sobre tus experiencias?",
-      "intelligence": "interpersonal"
+      "intelligence": "intrapersonal"
     },
     {
       "id": 58,
       "question": "¿Disfrutas de la autoexploración y el autodescubrimiento?",
-      "intelligence": "interpersonal"
+      "intelligence": "intrapersonal"
     },
     {
       "id": 59,
       "question": "¿Eres bueno manejando el estrés y las emociones difíciles?",
-      "intelligence": "interpersonal"
+      "intelligence": "intrapersonal"
     },
     {
       "id": 60,
       "question": "¿Te gusta aprender sobre filosofía o aspectos profundos de la vida?",
-      "intelligence": "interpersonal"
+      "intelligence": "intrapersonal"
     },
     {
       "id": 61,
-      "question": "¿Te gusta reflexionar sobre tus pensamientos y emociones?",
-      "intelligence": "intrapersonal"
+      "question": "¿Te sientes cómodo trabajando en grupo?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 62,
-      "question": "¿Eres bueno identificando tus fortalezas y debilidades?",
-      "intelligence": "intrapersonal"
+      "question": "¿Eres bueno entendiendo los sentimientos y motivaciones de otras personas?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 63,
-      "question": "¿Te sientes cómodo pasando tiempo a solas?",
-      "intelligence": "intrapersonal"
+      "question": "¿Te resulta fácil comunicarte y colaborar con otros?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 64,
-      "question": "¿Eres capaz de identificar qué te motiva y qué te frustra?",
-      "intelligence": "intrapersonal"
+      "question": "¿Disfrutas enseñando y ayudando a otros a aprender?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 65,
-      "question": "¿Te gusta establecer metas personales y trabajar para alcanzarlas?",
-      "intelligence": "intrapersonal"
+      "question": "¿Eres capaz de resolver conflictos de manera efectiva?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 66,
-      "question": "¿Eres consciente de cómo tus emociones afectan tus decisiones?",
-      "intelligence": "intrapersonal"
+      "question": "¿Te gusta organizar actividades sociales o eventos?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 67,
-      "question": "¿Te resulta fácil analizar y reflexionar sobre tus experiencias?",
-      "intelligence": "intrapersonal"
+      "question": "¿Eres bueno trabajando en equipo?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 68,
-      "question": "¿Disfrutas de la autoexploración y el autodescubrimiento?",
-      "intelligence": "intrapersonal"
+      "question": "¿Te sientes cómodo liderando a otras personas?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 69,
-      "question": "¿Eres bueno manejando el estrés y las emociones difíciles?",
-      "intelligence": "intrapersonal"
+      "question": "¿Eres capaz de adaptarte a diferentes personalidades y estilos de comunicación?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 70,
-      "question": "¿Te gusta aprender sobre filosofía o aspectos profundos de la vida?",
-      "intelligence": "intrapersonal"
+      "question": "¿Disfrutas de conocer y relacionarte con nuevas personas?",
+      "intelligence": "interpersonal"
     },
     {
       "id": 71,
