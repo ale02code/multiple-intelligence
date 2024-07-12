@@ -6,6 +6,16 @@ import { useIntelligence } from "../context/intelligenceSelect";
 import questionsData from "../data/questions.json";
 import intelligencesData from "../data/intelligences.json";
 
+// Importar las imágenes correspondientes
+import linguisticaIMG from "../assets/intelligences/linguistica.jpg";
+import logicaIMG from "../assets/intelligences/logico.jpg";
+import naturalistaIMG from "../assets/intelligences/naturalista.jpeg";
+import visualIMG from "../assets/intelligences/visual.jpg";
+import musicalIMG from "../assets/intelligences/musical.jpg";
+import intrapersonalIMG from "../assets/intelligences/intrapersonal.jpeg";
+import interpersonalIMG from "../assets/intelligences/interpersonal.jpeg";
+import corporalIMG from "../assets/intelligences/corporal.jpg";
+
 import imgTest from "../assets/imgs/gatos-main.jpeg";
 
 function Quizz() {
@@ -85,6 +95,22 @@ function Quizz() {
 
   const maxIntelligence = getMaxIntelligence();
 
+  // Función para obtener la imagen correspondiente a la inteligencia
+  const getImageForIntelligence = (intelligenceName) => {
+    const imageMap = {
+      linguistica: linguisticaIMG,
+      lógica: logicaIMG,
+      visual: visualIMG,
+      musical: musicalIMG,
+      corporal: corporalIMG,
+      interpersonal: interpersonalIMG,
+      intrapersonal: intrapersonalIMG,
+      naturalista: naturalistaIMG,
+    };
+
+    return imageMap[intelligenceName] || imgTest; // Si no se encuentra, devolver una imagen por defecto
+  };
+
   return (
     <>
       {!visible && (
@@ -126,7 +152,7 @@ function Quizz() {
             <p className="text-lg text-justify">{maxIntelligence.high_level}</p>
             <img
               className="h-80 max-sm:h-auto object-cover"
-              src={maxIntelligence.img}
+              src={getImageForIntelligence(maxIntelligence.name)}
               alt="test"
             />
           </div>
