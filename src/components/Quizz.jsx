@@ -99,7 +99,7 @@ function Quizz() {
   const getImageForIntelligence = (intelligenceName) => {
     const imageMap = {
       linguistica: linguisticaIMG,
-      lógica: logicaIMG,
+      logica: logicaIMG,
       visual: visualIMG,
       musical: musicalIMG,
       corporal: corporalIMG,
@@ -108,7 +108,7 @@ function Quizz() {
       naturalista: naturalistaIMG,
     };
 
-    return imageMap[intelligenceName] || imgTest; // Si no se encuentra, devolver una imagen por defecto
+    return imageMap[intelligenceName] || imgTest;
   };
 
   return (
@@ -153,7 +153,7 @@ function Quizz() {
             <img
               className="h-80 max-sm:h-auto object-cover"
               src={getImageForIntelligence(maxIntelligence.name)}
-              alt="test"
+              alt="test-img"
             />
           </div>
         </section>
