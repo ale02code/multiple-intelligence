@@ -6,7 +6,6 @@ import { useIntelligence } from "../context/intelligenceSelect";
 import questionsData from "../data/questions.json";
 import intelligencesData from "../data/intelligences.json";
 
-// Importar las imágenes correspondientes
 import linguisticaIMG from "../assets/intelligences/linguistica.jpg";
 import logicaIMG from "../assets/intelligences/logico.jpg";
 import naturalistaIMG from "../assets/intelligences/naturalista.jpeg";
@@ -95,7 +94,6 @@ function Quizz() {
 
   const maxIntelligence = getMaxIntelligence();
 
-  // Función para obtener la imagen correspondiente a la inteligencia
   const getImageForIntelligence = (intelligenceName) => {
     const imageMap = {
       linguistica: linguisticaIMG,
@@ -108,7 +106,11 @@ function Quizz() {
       naturalista: naturalistaIMG,
     };
 
-    return imageMap[intelligenceName] || imgTest;
+    // Obtener la imagen correspondiente o usar la imagen por defecto
+    const selectedImage = imageMap[intelligenceName] || imgTest;
+
+    // Si la imagen seleccionada es una cadena vacía o nula, devolver la imagen por defecto
+    return selectedImage || imgTest;
   };
 
   return (

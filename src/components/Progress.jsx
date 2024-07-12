@@ -12,7 +12,7 @@ function Progress() {
           style={{ width: `${progress}%` }}
         ></div>
       </div>
-      <div className="text-xs text-center mt-1">Progreso: {progress}%</div>
+      {/* <div className="text-xs text-center mt-1">Progreso: {progress}%</div> */}
     </div>
   );
 }
