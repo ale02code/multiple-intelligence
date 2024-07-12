@@ -115,7 +115,7 @@ function Quizz() {
     <>
       {!visible && (
         <div className="h-auto w-screen flex flex-col justify-start items-center">
-          <section className="mt-28 mb-10 overflow-x-hidden flex justify-start items-center gap-5 flex-col">
+          <section className="mt-32 mb-10 overflow-x-hidden flex justify-start items-center gap-5 flex-col">
             <Progress />
             {questions.map((q) => (
               <Question
